@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color:#000000;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+
+#container{
+    background-image: url("../img/background.png");
+    height: 100%; 
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+/*    padding-top: 25%;*/
+/*    padding: */
+}
+
+.grid{
+    display: flex;
+    color: #ffffff;
+    padding: 2%;
+    margin: auto;
+    transform: translate(0, 10%);
+    width:80%;
+
+}
+
+.title{
+    flex: 1.5;
+    padding-top: 10%;
+}
+
+.title h1{
+    font-size: 100px;
+    color: #ffffff;
+    font-family: "Playfair+Display";
+/*    font-style: italic;*/
+    font-weight: 800;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    animation: 
+        typing 3.5s steps(50, end);
+}
+
+.title a{
+    text-decoration: none;
+}
+
+.title h2{
+    font-family: 'Raleway';
+    margin-top:-50px;
+    font-size: 40px;
+    color: #838383;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    animation: 
+        typing 4.5s steps(50, end);   
+}
+
+.button{
+    width:200px;
+    height: 35px;
+    margin:0px 0px 30px 0px;
+    font-family: "Raleway";
+    font-size: 14px;
+    background-color: #141313;
+    color: #ffffff;
+}
+
+.button:hover{
+    background-color: dimgrey;
+}
+
+
+.scrool{
+    display: block;
+    height:100px;
+    background-color: blue;
+}
+
+marquee{
+    height:35%;
+    font-size: 18px;
+    flex: 1;
+    transform: translate(0,50%);
+    font-family: sans-serif;
+    color: #838383;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/*=============subtitle==========*/
+.subtitle {
+    background-image: url("../img/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20%;
+    margin-top: 0;
+    text-align: center;
+}
+
+.subtitle h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 15%;
+    color: #ffffff;
+}
+
+
+/*=============footer============*/
+
+footer {
+    margin-top: 20px;
+    height: 30%;
+    background-color: #080808;
+    color: #434343;
+    padding-top: 3%; 
+    padding-bottom: 1%;
+
+    
+}
+
+footer .note{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    font-family:'Raleway';
+    font-size: 15px;
+    height: 100%;
+    text-align:inherit;
+}

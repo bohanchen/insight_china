@@ -264,7 +264,7 @@ d3.csv("data/ChinaPopulation.csv").then(function (data) {
             .attr("height", function(d) { 
                 return Math.abs(y3(d.NaturalGrowthRate));
             })
-            .attr("width", 17)
+            .attr("width", 6)
             .attr("fill", function (d) {
                 if (d.Year == "1960") {
                     return "#DB5D5D"
